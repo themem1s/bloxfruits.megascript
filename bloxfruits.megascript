@@ -1,0 +1,29 @@
+
+local player = game.Players.LocalPlayer
+
+local screenGui = Instance.new("ScreenGui")
+local frame = Instance.new("Frame")
+local imageLabel = Instance.new("ImageLabel")
+local textLabel = Instance.new("TextLabel")
+
+screenGui.Parent = player:WaitForChild("PlayerGui")
+
+frame.Parent = screenGui
+frame.Size = UDim2.new(1, 0, 1, 0)
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
+
+imageLabel.Parent = frame
+imageLabel.Size = UDim2.new(1, 0, 1, 0)
+imageLabel.Image = "rbxassetid://18942717777"
+
+textLabel.Parent = frame
+textLabel.Size = UDim2.new(0.8, 0, 0.2, 0)  
+textLabel.Position = UDim2.new(0.1, 0, 0.4, 0) 
+textLabel.Text = "Hileyi kapa sikmiyim"
+textLabel.TextColor3 = Color3.new(1, 0, 0)
+textLabel.TextScaled = true
+textLabel.BackgroundTransparency = 1
+
+
+wait(5)
+player:Kick("el hajad no hile haraam allah is watching brother dont haraaam")
